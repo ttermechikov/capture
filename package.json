@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gulp build",
     "start": "npm run build && gulp serve",
-    "test": "echo \"Error: no test specified\"",
+    "test": "npm run stylelint",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint ./src/less/**/*.less",
     "stylelint-fix": "stylelint ./src/less/**/*.less --fix"
