@@ -1,0 +1,32 @@
+.featured {
+  padding: 25px 0;
+  background-color: #f3f3f3;
+
+  @media (max-width: @desktop-width) {
+    padding: 17px 0 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    max-width: 955px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media (max-width: @desktop-width) {
+      max-width: 90%;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img {
+    @media (max-width: @desktop-width) {
+      width: 50%;
+      padding-bottom: 17px;
+      text-align: center;
+    }
+    @media (max-width: @tablet-width) {
+      width: 100%;
+    }
+  }
+}

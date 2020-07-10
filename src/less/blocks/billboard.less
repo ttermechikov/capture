@@ -1,0 +1,97 @@
+.billboard {
+  background-image: url("../img/billboard.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__wrapper {
+    display: flex;
+    max-width: @desktop-max-width;
+    flex-direction: column;
+    padding: 176px 0 179px;
+    margin: 0 auto;
+
+    @media (max-width: @desktop-width) {
+      max-width: 90%;
+      padding: 117px 0 119px;
+    }
+    @media (max-width: @tablet-width) {
+      padding: 78px 0 59px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 39px;
+    color: rgb(82, 82, 82);
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 0.73;
+    text-transform: uppercase;
+
+    @media (max-width: @tablet-width) {
+      margin-bottom: 27px;
+      line-height: 0.9;
+    }
+  }
+
+  &__description {
+    max-width: 560px;
+    margin: 0 0 33px;
+    color: rgb(110, 108, 108);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.44;
+
+    @media (max-width: @desktop-width) {
+      max-width: 50%;
+    }
+    @media (max-width: @tablet-width) {
+      max-width: 90%;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+
+    @media (max-width: @desktop-width) {
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    padding: 20px 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+    color: rgb(82, 82, 82);
+    font-family: "Open Sans Semibold", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @media (max-width: @desktop-width) {
+      max-width: 227px;
+    }
+  }
+
+  &__button:first-child {
+    margin-right: 20px;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button img {
+    margin-right: 19px;
+  }
+
+  &__button:active,
+  &__button:hover {
+    border-color: @accent-color;
+    cursor: pointer;
+  }
+}

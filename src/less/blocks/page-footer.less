@@ -1,0 +1,29 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  background-color: rgb(250, 249, 249);
+
+  @media (max-width: @desktop-width) {
+    padding: 67px 0;
+  }
+  @media (max-width: @tablet-width) {
+    padding: 45px 0;
+  }
+
+  &__links {
+    margin-bottom: 55px;
+
+    @media (max-width: @tablet-width) {
+      margin-bottom: 37px;
+    }
+  }
+
+  &__info {
+    color: rgb(118, 114, 114);
+    font-family: "OpenSansRegular", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}

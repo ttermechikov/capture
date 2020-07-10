@@ -1,0 +1,71 @@
+.testimonials {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+
+  @media (max-width: @desktop-width) {
+    padding: 67px 0;
+  }
+  @media (max-width: @tablet-width) {
+    padding: 40px 0;
+  }
+
+  &__wrapper {
+    max-width: 840px;
+
+    @media (max-width: @desktop-width) {
+      max-width: 90%;
+    }
+  }
+
+  &__description {
+    max-width: 817px;
+    margin: 0 0 25px;
+    color: rgb(118, 114, 114);
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 17px;
+    }
+    @media (max-width: @desktop-width) {
+      margin-bottom: 11px;
+    }
+  }
+
+  &__member {
+    margin-bottom: 35px;
+    color: rgb(75, 72, 72);
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 23px;
+    }
+    @media (max-width: @desktop-width) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__author {
+    font-family: "OpenSansSemibold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  &__buttons {
+    text-align: center;
+  }
+
+  &__button {
+    margin: 0 16px;
+    cursor: pointer;
+
+    @media (max-width: @desktop-width) {
+      margin: 25px;
+    }
+  }
+}
